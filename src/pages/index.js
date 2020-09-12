@@ -18,6 +18,7 @@ import InfoIcon from '@material-ui/icons/Info'
 import ExpandLess from '@material-ui/icons/ExpandLess'
 import ExpandMore from '@material-ui/icons/ExpandMore'
 import Done from '@material-ui/icons/Done'
+import StoreIcon from '@material-ui/icons/Store'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -69,40 +70,16 @@ const IndexPage = () => {
           <ListItemIcon>
             <StarIcon />
           </ListItemIcon>
-          <ListItemText primary="Features" />
+          <ListItemText primary="新着リンク" />
           {features ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={!features} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
             <ListItem button className={classes.nested}>
               <ListItemIcon>
-                <Done />
+                <StoreIcon />
               </ListItemIcon>
-              <ListItemText primary="Material UI Framework" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <ListItemIcon>
-                <Done />
-              </ListItemIcon>
-              <ListItemText primary="Progressive Web App" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <ListItemIcon>
-                <Done />
-              </ListItemIcon>
-              <ListItemText primary="SEO" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <ListItemIcon>
-                <Done />
-              </ListItemIcon>
-              <ListItemText primary="Offline Support" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <ListItemIcon>
-                <Done />
-              </ListItemIcon>
-              <ListItemText primary="Roboto Typeface (self hosted)" />
+              <ListItemText primary="お店名" />
             </ListItem>
           </List>
         </Collapse>

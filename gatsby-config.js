@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `六甲バル紹介サイト`,
-    description: `Kick off your next, great Gatsby project with this Material UI starter. This barebones starter ships with the main Gatsby and Material UI configuration files you might need.`,
-    author: `@dominicabela`,
+    title: `六甲道バル`,
+    description: `JR六甲道駅を中心に、美味しいお店やオシャレなバルを紹介しています。`,
+    author: `DDCatwalk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `六甲道バル`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
